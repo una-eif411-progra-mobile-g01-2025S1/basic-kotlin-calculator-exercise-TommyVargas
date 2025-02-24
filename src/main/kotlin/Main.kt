@@ -1,16 +1,16 @@
 package org.example
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-fun main() {
-    val name = "Kotlin"
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    println("Hello, " + name + "!")
 
-    for (i in 1..5) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        println("i = $i")
-    }
+fun main() {
+    val calculadora = Calculadora()
+
+    //------------------------------Tommy Vargas Naranjo------------------------------
+    //Casos basicos
+    println("Suma de 5 y 3: ${calculadora.add(5.0, 3.0)}")
+    println("Resta de 5 y 3: ${calculadora.subtract(5.0, 3.0)}")
+    println("Multiplicación de 5 y 3: ${calculadora.multiply(5.0, 3.0)}")
+    println("División de 10 y 2: ${calculadora.divide(10.0, 2.0)}")
+
+    //Division entre cero
+    println("División de 10 y 2: ${calculadora.divide(10.0, 0.0)}")
 }
